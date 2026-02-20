@@ -280,3 +280,67 @@ window.addEventListener('resize', () => {
     confettiCanvas.width = window.innerWidth;
     confettiCanvas.height = window.innerHeight;
 });
+
+/* ──────────────────────────────────────
+   FLOATING AUDIO PLAYER
+   Controls: Play/Pause + Mute toggle
+────────────────────────────────────── */
+(function initAudioPlayer() {
+
+    const music = document.getElementById('bgMusic');
+    const player = document.getElementById('audio-player');
+    const playBtn = document.getElementById('ap-play-btn');
+    const iconPlay = document.getElementById('icon-play');
+    const iconPause = document.getElementById('icon-pause');
+    const apStatus = document.getElementById('ap-status');
+    const volBtn = document.getElementById('ap-vol-btn');
+    const volOn = document.getElementById('vol-icon-on');
+    const volOff = document.getElementById('vol-icon-off');
+
+    if (!music || !playBtn) return; // Guard if elements missing
+
+    /* ── Play / Pause ── */
+    playBtn.addEventListener('click', () => {
+        if (music.paused) {
+            music.play().then(() => {
+                setPlaying(true);
+            }).catch(() => {
+                // Autoplay blocked — user interaction already happened so this is rare
+                setPlaying(false);
+            });
+        } else {
+            music.pause();
+            setPlaying(false);
+        }
+    });
+
+    function setPlaying(playing) {
+        if (playing) {
+            iconPlay.style.display = 'none';
+            iconPause.style.display = 'block';
+            apStatus.textContent = 'Playing ♪';
+            apStatus.style.color = '#E91E63';
+            player.classList.add('is-playing');
+            playBtn.setAttribute('aria-label', 'Pause music');
+        } else {
+            iconPlay.style.display = 'block';
+            iconPause.style.display = 'none';
+            apStatus.textContent = 'Paused';
+            apStatus.style.color = '';
+            player.classList.remove('is-playing');
+            playBtn.setAttribute('aria-label', 'Play music');
+        }
+    }
+
+    /* Sync if audio ends naturally */
+    music.addEventListener('ended', () => setPlaying(false));
+
+    /* ── Volume / Mute toggle ── */
+    volBtn.addEventListener('click', () => {
+        music.muted = !music.muted;
+        volOn.style.display = music.muted ? 'none' : 'block';
+        volOff.style.display = music.muted ? 'block' : 'none';
+        volBtn.setAttribute('aria-label', music.muted ? 'Unmute' : 'Mute');
+    });
+
+})();
