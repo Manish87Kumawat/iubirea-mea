@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Lakshita 💕</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ══════════════════════════════════════
+       1. ENTRY SCREEN
+  ══════════════════════════════════════ -->
+    <div id="entry-screen">
+        <div class="entry-inner">
+            <!-- Floating background hearts -->
+            <div class="entry-hearts" aria-hidden="true"></div>
+
+            <p class="entry-tagline">💗</p>
+            <h1 class="entry-title">Sirf Lakshita ke liye</h1>
+            <p class="entry-sub">Aapka naam likhiye aur enter kijiye</p>
+
+            <div class="entry-form">
+                <input type="text" id="name-input" placeholder="Aapka naam..." autocomplete="off"
+                    aria-label="Apna naam likhiye" />
+                <button id="enter-btn" aria-label="Enter kijiye">Enter</button>
+            </div>
+
+            <p id="entry-error" class="entry-error" aria-live="polite"></p>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════
+       MAIN WEBSITE (hidden until unlock)
+  ══════════════════════════════════════ -->
+    <main id="main-site" class="hidden">
+
+        <!-- ── 2. HERO SECTION ── -->
+        <section id="hero">
+            <!-- Floating hearts background -->
+            <div class="floating-hearts" aria-hidden="true" id="floating-hearts"></div>
+
+            <div class="hero-content">
+                <p class="hero-pre animate-fade-up delay-1">✨ Aaj ka din bahut khaas hai ✨</p>
+                <h1 class="hero-heading animate-fade-up delay-2">
+                    Happy Birthday<br /><span class="accent">Lakshita</span> 💕
+                </h1>
+                <p class="hero-sub animate-fade-up delay-3">
+                    Aap meri zindagi ka sabse khoobsurat ehsaas hain.
+                </p>
+                <a href="#love-letter" class="btn-primary animate-fade-up delay-4" id="hero-cta">
+                    Meri ki taraf se ek chhota sa tohfa
+                </a>
+            </div>
+
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="scroll-dot"></div>
+            </div>
+        </section>
+
+        <!-- ── 3. LOVE LETTER SECTION ── -->
+        <section id="love-letter">
+            <div class="section-inner">
+                <p class="section-label reveal">Dil ki baat</p>
+                <div class="letter-card reveal">
+                    <div class="letter-deco" aria-hidden="true">❝</div>
+                    <div class="letter-body">
+                        <p class="letter-salutation">Lakshita,</p>
+                        <p>
+                            Aaj ka din mere liye sirf ek birthday nahi… ek celebration hai.
+                            Celebration us insaan ka jo meri zindagi ka sabse khaas hissa hai ❤️
+                        </p>
+                        <p>
+                            Aapko paana meri zindagi ka sabse bada blessing hai.
+                            Aapki muskaan, aapki baatein, aapka saath — yeh sab mere liye ek priceless gift hai.
+                        </p>
+                        <p>
+                            Humara milna shayad kam hota hai — aap apni JEE ki padhai me focused ho, aur main apni
+                            responsibilities me…
+                            lekin shayad isi cheez ne hume aur strong banaya hai.
+                            Distance ne kabhi hume door nahi kiya, balki aur gehra joda hai 💫
+                        </p>
+                        <p>
+                            Humari chemistry bas achhi nahi… kamaal ki hai.
+                            Bina zyada bole samajh lena, bina mile connected rehna, aur har situation me ek dusre ke
+                            liye khade rehna —
+                            yeh sab normal nahi hota, yeh khaas hota hai 💞
+                        </p>
+                        <p>
+                            Aap sirf meri hone wali wife nahi…
+                            aap meri izzat ho, meri motivation ho, meri strength ho.
+                            Aapka care karna, meri chhoti chhoti baaton ka dhyaan rakhna…
+                            yeh sab mere liye bahut maayne rakhta hai ❤️
+                        </p>
+                        <p>
+                            Aur ek baat jo main dil se maanta hoon —
+                            jo bhi hoga, hum saath me hoga.
+                            Jo bhi karenge, saath me karenge.
+                            Jo bhi build karenge, saath me build karenge.
+                            Sapne bhi saath ke, struggles bhi saath ke, success bhi saath ki 💍✨
+                        </p>
+                        <p>
+                            Main chahta hoon ki aap apne sapne poore karo, apni padhai me shine karo,
+                            aur har woh cheez haasil karo jiske aap layak ho.
+                            Aur main hamesha aapke saath rahunga — sirf words me nahi, har action me.
+                        </p>
+                        <p>
+                            Aapka har birthday mujhe yaad dilata hai ki mujhe aapko aur zyada khush rakhna hai…
+                            is saal se bhi zyada, har agle saal se bhi zyada ❤️
+                        </p>
+                        <p>
+                            Happy Birthday.
+                            Aap meri zindagi ka sabse pyaara sach ho.
+                        </p>
+                        <p class="letter-sign">— Hamesha aur sirf aapka, <strong>Manish ~ Nonsense Manish</strong> ❤️</p>
+                    </div>
+                    <div class="letter-deco letter-deco-right" aria-hidden="true">❞</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── 4. WHY I LOVE YOU SECTION ── -->
+        <section id="reasons">
+            <div class="section-inner">
+                <p class="section-label reveal">Jo aapko aap banata hai</p>
+                <h2 class="section-heading reveal">Kyun mujhe aapse pyaar hai</h2>
+                <div class="reasons-grid">
+
+                    <div class="reason-card reveal">
+                        <span class="reason-icon">🌸</span>
+                        <h3>Aapki Simplicity</h3>
+                        <p>Aap bina kisi dikhave ke itni khoobsurat hain — aapki saadgi hi aapka sabse bada gehna hai.
+                        </p>
+                    </div>
+
+                    <div class="reason-card reveal">
+                        <span class="reason-icon">💕</span>
+                        <h3>Aapka Caring Nature</h3>
+                        <p>Aapka dil itna bada hai — har kisi ki parwah aap khamoshi se karte hain, bina shuaali ke.</p>
+                    </div>
+
+                    <div class="reason-card reveal">
+                        <span class="reason-icon">✨</span>
+                        <h3>Aapka Self-Respect</h3>
+                        <p>Aap jaanti hain ki aap kis cheez ki haqdar hain — yeh baat aapko aur bhi zyada qabil-e-izzat
+                            banati hai.</p>
+                    </div>
+
+                    <div class="reason-card reveal">
+                        <span class="reason-icon">💍</span>
+                        <h3>Aapke saath Future ka Sapna</h3>
+                        <p>Har sapna jo main dekhta hoon, usme aap hain — aur yahi meri sabse badi khushi hai.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── 5. GALLERY SECTION ── -->
+        <section id="gallery">
+            <div class="section-inner">
+                <p class="section-label reveal">Kuch khoobsurat pal</p>
+                <h2 class="section-heading reveal">Yaadon ki Mehfil</h2>
+
+                <div class="gallery-grid">
+
+                    <!-- Item 1 -->
+                    <div class="gallery-item reveal">
+                        <div class="gallery-frame">
+                            <img src="gallery/img1.jpeg" alt="Aapke saath har pal khaas hai"
+                                class="gallery-photo parallax-img" loading="lazy" />
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Aapke saath har pal khaas hai</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="gallery-item reveal">
+                        <div class="gallery-frame">
+                            <img src="gallery/img2.jpeg" alt="Muskurahat jo dil jeet le"
+                                class="gallery-photo parallax-img" loading="lazy" />
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Muskurahat jo dil jeet le</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="gallery-item reveal">
+                        <div class="gallery-frame">
+                            <img src="gallery/img3.jpeg" alt="Yaadein jo hamesha saath rahengi"
+                                class="gallery-photo parallax-img" loading="lazy" />
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Yaadein jo hamesha saath rahengi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="gallery-item reveal">
+                        <div class="gallery-frame">
+                            <img src="gallery/img4.jpeg" alt="Ek khoobsurat safar" class="gallery-photo parallax-img"
+                                loading="lazy" />
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Ek khoobsurat safar</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="gallery-item reveal">
+                        <div class="gallery-frame">
+                            <img src="gallery/img5.jpeg" alt="Aap meri dua hain" class="gallery-photo parallax-img"
+                                loading="lazy" />
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Aap meri dua hain</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="gallery-item reveal">
+                        <div class="gallery-frame">
+                            <img src="gallery/img6.jpeg" alt="Har lamha mehfooz" class="gallery-photo parallax-img"
+                                loading="lazy" />
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Har lamha mehfooz</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 7 -->
+                    <div class="gallery-item reveal">
+                        <div class="gallery-frame">
+                            <img src="gallery/img7.jpeg" alt="Har lamha mehfooz" class="gallery-photo parallax-img"
+                                loading="lazy" />
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Aapki muskaan meri duniya roshan karti hai</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 8-->
+                    <div class="gallery-item reveal">
+                        <div class="gallery-frame">
+                            <img src="gallery/img8.jpeg" alt="Har lamha mehfooz" class="gallery-photo parallax-img"
+                                loading="lazy" />
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Aap mere har kal ka sabse khoobsurat hissa hain</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 9 -->
+                    <div class="gallery-item reveal">
+                        <div class="gallery-frame">
+                            <img src="gallery/img9.jpeg" alt="Har lamha mehfooz" class="gallery-photo parallax-img"
+                                loading="lazy" />
+                            <div class="gallery-overlay">
+                                <p class="gallery-caption">Aapke saath har safar khaas ban jaata hai</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /.gallery-grid -->
+            </div>
+        </section>
+
+        <!-- ── 6. FINAL EMOTIONAL SECTION ── -->
+        <section id="final">
+            <div class="section-inner final-inner">
+                <div class="final-deco reveal" aria-hidden="true">💗</div>
+                <h2 class="final-heading reveal">
+                    Lakshita, aap meri duaon ka<br />sabse khoobsurat jawab hain.
+                </h2>
+                <p class="final-sub reveal">
+                    Aaj, kal aur hamesha — Me aapke saath hu.
+                </p>
+                <button id="hug-btn" class="btn-primary reveal" aria-label="Virtual Hug bhejiye">
+                    Ek Virtual Hug 🤗
+                </button>
+
+                <!-- Heart burst container -->
+                <div id="heart-burst" aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <!-- ── 7. FOOTER ── -->
+        <footer id="footer">
+            <p class="footer-text">With lots of love, <span class="accent">Manish</span> ❤️</p>
+            <p class="footer-sub">© 2026 · Sirf aapke liye bana</p>
+        </footer>
+
+    </main>
+
+    <!-- Confetti canvas -->
+    <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
